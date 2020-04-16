@@ -38,7 +38,11 @@ The code calling the cloud function is in 3 separate files.
 - utils.gs
 
 The main code is in the code.gs file.
-The 2 functions unit_test_text() and unit_test_attachments() are the ones that should be run in order to perform the required uploads to Priority.
+The 2 functions 
+  unit_test_text() 
+  unit_test_attachments() 
+are the ones that should be run in order to perform the required uploads to Priority.
+**Note:** These functions are just a demo of the code capabilities.
 
 ### Running the code
 1. Create a new [Google Apps Script](https://developers.google.com/apps-script/guides/standalone)
