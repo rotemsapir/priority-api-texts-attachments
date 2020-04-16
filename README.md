@@ -18,18 +18,13 @@ The code for the cloud function web service is in index.js. It can be easily ada
 the web service exposes one function, doApi, which is called when the cloud function is called.
 The web service needs to expose 2 functions (for text and for attachments). That is done using the 'calltype' parameter in the url.
 
->Examples:
->
->https://cloud-function-url?calltype=UploadText
->
->https://cloud-function-url?calltype=addAttachment
+>Examples:  https://cloud-function-url?calltype=UploadText  https://cloud-function-url?calltype=addAttachment
 
 Each of these parameters is then mapped to the relevant web sdk function.
 
 The functions are generic, in that they are designed to work with any text / attachment sub form.
 
-Create a new google cloud function and paste the code of index.js
-**Note:** These functions may run slowly - depending on the size of the text / attachment. Set the google cloud function timeout to as high as possible (540 seconds) in order to make sure it does not time out during execution.
+Create a new google cloud function and paste the code of index.js  **Note:** These functions may run slowly - depending on the size of the text / attachment. Set the google cloud function timeout to as high as possible (540 seconds) in order to make sure it does not time out during execution.
 
 ## Google Apps Script Sample code
 The code calling the cloud function is in 3 separate files. 
@@ -38,11 +33,7 @@ The code calling the cloud function is in 3 separate files.
 - utils.gs
 
 The main code is in the code.gs file.
-The 2 functions 
-  unit_test_text() 
-  unit_test_attachments() 
-are the ones that should be run in order to perform the required uploads to Priority.
-**Note:** These functions are just a demo of the code capabilities.
+The 2 functions  unit_test_text()  unit_test_attachments()  are the ones that should be run in order to perform the required uploads to Priority.  **Note:** These functions are just a demo of the code capabilities.
 
 ### Running the code
 1. Create a new [Google Apps Script](https://developers.google.com/apps-script/guides/standalone)
