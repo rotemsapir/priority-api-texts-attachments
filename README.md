@@ -21,6 +21,7 @@ The web service needs to expose 2 functions (for text and for attachments). That
 >Examples:
 >
 >https://cloud-function-url?calltype=UploadText
+>
 >https://cloud-function-url?calltype=addAttachment
 
 Each of these parameters is then mapped to the relevant web sdk function.
